@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+  --color-one: #FF8484;
+  --color-two: #F7D9C4;
+  --color-text: #232323;
+  --color-desc: #777777;
+  --bg-1: #EFEFEF;
+  --bg-2: #DCE8EB;
+  --bg-3: #31363B;
+
+  --font: 'DM Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--color-text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner-desc {
+  color: var(--color-desc);
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.button {
+    color: var(--color-text);
+    background: #fff;
+    border: 2px solid #fff;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .button-two {
+    background: var(--color-two);
+    color: var(--color-text);
+    border-color: var(--color-two);
+  }
+  
+  .button-two:hover {
+    background: #fff;
+    border-color: #fff;
+  }
+  
+  .button-dark {
+    background: var(--color-text);
+    color: #fff;
+    border-color: var(--color-text);
+  }
+  
+  .button-dark:hover {
+    background: var(--color-two);
+    color: var(--color-text);
+    border-color: var(--color-two);
+  }
+  
+  .button-two-outline {
+    background: transparent;
+    color: #fff;
+  }
+  
+  .button-two-outline:hover {
+    background: var(--color-two);
+    color: var(--color-text);
+    border-color: var(--color-two);
+  }
+  /* End Buttons */
+
+
+  /* Box Head */
+  .box-head {
+    margin-bottom: 30px;
+  }
+  
+  .box-head .inner-sub-title {
+    color: #909090;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .box-head .inner-title {
+    font-size: 58px;
+    color: var(--color-text);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .box-head-center {
+    text-align: center;
+  }
+  
+  @media (max-width: 767.98px) {
+    .box-head .inner-title {
+      font-size: 48px;
+    }
+  }
+  /* End Box Head */
+
+  
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
